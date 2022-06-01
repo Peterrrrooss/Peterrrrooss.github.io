@@ -4,14 +4,19 @@ color palette
 #2a272e dark grey
 #564665 dark purple
 */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&display=swap');
 body {
     background-color: aquamarine;
     color:#2a272e;
     margin:1% 20%; 
+    font-family: 'Karla', sans-serif;
+    font-size: 24px;
     }
 
-h1{
-    color:#564665;
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
 }
  
 table,th,td {
@@ -31,14 +36,13 @@ tr:nth-child(odd) {
   background-color: red;
   position: relative;
   animation-name: example;
-  animation-duration: 2s;
-  animation-iteration-count: 5;
+  animation-duration: 3s;
+  animation-iteration-count: ;2
 }
 
 @keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
+    0%     { left:0%; top:0px;}
+    50%    { left:100%; top:0px;}
+    100%   { left:0%; top:0px;}
+
 }
